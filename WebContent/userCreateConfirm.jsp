@@ -74,7 +74,7 @@
 				<s:form action="UserCreateCompleteAction">
 				<tr id="box">
 					<td>
-						<label>ログインID</label>
+						<label>ログインID(ユーザー名)</label>
 					</td>
 					<td>
 						<s:property value="loginUserId" escape="false" />
@@ -82,7 +82,7 @@
 				</tr>
 				<tr>
 					<td>
-						<label>ログインPASS:</label>
+						<label>ログインPASS</label>
 					</td>
 					<td>
 						<s:property value="loginPassword" escape="false" />
@@ -90,12 +90,75 @@
 				</tr>
 				<tr id="box">
 					<td>
-						<label>ユーザー名:</label>
+						<label>氏名</label>
 					</td>
 					<td>
-						<s:property value="userName" escape="false" />
+						<s:property value="userName1" escape="false" />
+						<s:property value="userName2" escape="false" />
 					</td>
 				</tr>
+				<tr>
+					<td>
+						<label>住所</label><br>
+					</td>
+				<tr>
+					<td>
+						<label>〒</label>
+					</td>
+					<td>
+						<s:property value="userAddress1" escape="false" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>都道府県</label>
+					</td>
+					<td>
+						<s:property value="userAddress2" escape="false" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>市区町村</label>
+					</td>
+					<td>
+						<s:property value="userAddress3" escape="false" />
+				</tr>
+				<tr>
+					<td>
+						<label>番地、マンション名</label>
+					</td>
+					<td>
+						<s:property value="userAddress4" escape="false" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>性別</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<s:property value="sex" escape="false" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>メールアドレス</label>
+					</td>
+					<td>
+						<s:property value="mail" escape="false" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>電話番号</label>
+					</td>
+					<td>
+						<s:property value="tel" escape="false" />
+					</td>
+				</tr>
+
 				<tr>
 					<td>
 					<s:submit value="完了"/>
@@ -103,6 +166,11 @@
 				</tr>
 				</s:form>
 			</table>
+			<div>
+				<span>前画面に戻る場合は</span>
+				<a href='<s:url action="UserCreateAction" />'>こちら</a>
+
+			</div>
 		</div>
 	</div>
 	<div id="footer">
