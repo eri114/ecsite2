@@ -7,6 +7,7 @@ public class BuyItemDTO {
 
 	public String itemPrice;
 
+
 	public String count;
 
 	public int totalPrice;
@@ -14,6 +15,7 @@ public class BuyItemDTO {
 	public String pay;
 
 	public String payValue;
+
 
 	public String getItemName() {
 		return itemName;
@@ -38,6 +40,7 @@ public class BuyItemDTO {
 	public void setId(int id) {
 		this.id = id;
 	}
+
 
 	public String getCount(){
 		return count;
@@ -70,4 +73,5 @@ public class BuyItemDTO {
 	public void setPayValue(String payValue){
 		this.payValue = payValue;
 	}
+
 }

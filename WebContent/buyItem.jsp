@@ -71,15 +71,19 @@
 		<div>
 			<s:form action="BuyItemAction">
 			<table>
+
 				<s:iterator value="buyItemDTOList">
+
 				<tr>
 					<td>
 						<span>商品名</span>
 					</td>
 					<td>
+
 						<s:property value="itemName" />
 						<s:hidden name="itemName" value="%{itemName}"/>
 						<br>
+
 					</td>
 				</tr>
 				<tr>
@@ -89,6 +93,7 @@
 					<td>
 						<s:property value="itemPrice" /><span>円</span>
 						<s:hidden name="itemPrice" value="%{itemPrice}"/>
+
 					</td>
 				</tr>
 				<tr>
@@ -107,6 +112,7 @@
 					</td>
 				</tr>
 				</s:iterator>
+
 				<tr>
 					<td>
 						<span>支払い方法</span>

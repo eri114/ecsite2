@@ -74,12 +74,14 @@
 		<result name="success">home.jsp</result>
 		</action>
 
+
 		<!-- BuyItemHistory
 		<action name="BuyItemHistoryAction" class="com.internousdev.ecsite.action.BuyItemHistoryAction" method="execute">
 		<result name="success">buyItemHistory.jsp</result>
 		<result name="error">error.jsp</result>
 		</action>
 		-->
+
 
 	</package>
 </struts>

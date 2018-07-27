@@ -9,7 +9,11 @@ drop table if exists login_user_transaction;
 
 create table login_user_transaction(
 	id int not null primary key auto_increment,
+<<<<<<< HEAD
 	login_id varchar(16) unique, /*ログインID*/
+=======
+	login_ida varchar(16) unique, /*ログインID*/
+>>>>>>> 3780f5bf65f33f688fc73ee3a04dabe771434901
 	login_pass varchar(16),
 	user_name1 varchar(50), /*苗字*/
 	user_name2 varchar(50), /*名前*/
@@ -48,11 +52,15 @@ create table user_buy_item_transaction(
 	delete_date datetime
 );
 
+<<<<<<< HEAD
 INSERT INTO item_info_transaction(item_name,item_price,item_stock)
 VALUES
 ("Notebook",100,50),
 ("pen",80,100),
 ("eraser",50,150);
+=======
+INSERT INTO item_info_transaction(item_name,item_price,item_stock) VALUES("ノートBook",100,50);
+>>>>>>> 3780f5bf65f33f688fc73ee3a04dabe771434901
 
 INSERT INTO login_user_transaction(login_id,login_pass,user_name1,user_name2,user_address1,user_address2,
 user_address3,user_address4,user_sex,user_mail,user_tel)

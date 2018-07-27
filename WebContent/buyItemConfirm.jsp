@@ -72,6 +72,7 @@
 	</div>
 	<div id="main">
 		<div id="top">
+
 			<p>BuyItemConfirm</p>
 		</div>
 		<div>
@@ -119,6 +120,7 @@
 						<td><input type="button" value="完了"
 							onclick="submitAction('BuyItemConfirmAction')"/></td>
 					</tr>
+
 
 			</s:form>
 		</div>

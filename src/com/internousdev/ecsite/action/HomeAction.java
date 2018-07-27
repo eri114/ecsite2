@@ -14,17 +14,21 @@ public class HomeAction extends ActionSupport implements SessionAware {
 	private BuyItemDAO buyItemDAO = new BuyItemDAO();
 	private List<BuyItemDTO> buyItemDTOList;
 
+
 	public String execute() {
 		String result = "login";
 
 		if(session.containsKey("id")) {
+
 			buyItemDTOList = buyItemDAO.getBuyItemInfo();
 			session.put("buyItemDTOList", buyItemDTOList);
+
 
 			result = SUCCESS;
 		}
 		return result;
 	}
+
 
 	public List<BuyItemDTO> getBuyItemDTOList() {
 		return buyItemDTOList;

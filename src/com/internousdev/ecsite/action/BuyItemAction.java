@@ -112,9 +112,11 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 		return pay;
 	}
 
+
 	public void setPay(String pay) {
 		this.pay = pay;
 	}
+
 
 	public String getPayValue() {
 		return payValue;
@@ -122,6 +124,7 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 
 	public void setPayValue(String payValue) {
 		this.payValue = payValue;
+
 	}
 
 }
